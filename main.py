@@ -65,8 +65,8 @@ def data_from_name(state) -> str:
 
             t_1 = f"Number of confirmed cases in India: <b>{i['confirmed']}</b>\n"
             t_2 = f"Number of deaths in India: <b>{i['deaths']}</b>\n"
-            t_3 = f"Number of confirmed cases in the last 24 hours: <b>{daily_confirmed if int(daily_confirmed) > 0 else 'Data not provided'}</b>\n"
-            t_4 = f"Number of deaths in the last 24 hours: <b>{daily_deaths if int(daily_deaths) > 0 else 'Data not provided'}</b>\n"
+            t_3 = f"Number of confirmed cases in the last 24 hours: <b>{daily_confirmed}</b>\n"
+            t_4 = f"Number of deaths in the last 24 hours: <b>{daily_deaths}</b>\n"
             t_5 = f"Number of recovered patients in India: <b>{i['recovered']}</b>\n"
 
             text = t_1 + "\n" + t_2 + "\n" + t_3 + "\n" + t_4 + "\n" + t_5
