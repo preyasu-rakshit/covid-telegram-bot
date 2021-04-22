@@ -10,8 +10,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Covid data mangement functions
-
-
 def update_database(context) -> None:
     global state_data, daily_data
 
