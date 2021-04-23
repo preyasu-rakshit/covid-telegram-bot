@@ -92,11 +92,6 @@ def stateinfo(update, context):
     msg = update.message.text
     try:
         args = msg.split("/state ")[1]
-    except:
-        update.message.reply_text("Invalid usage of /state. Kindly see /help")
-        return
-
-    try:
         info = data_from_name(args)
         update.message.reply_text(info, parse_mode='HTML')
         return
